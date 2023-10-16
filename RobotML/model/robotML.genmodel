@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/RobotML/src-gen" creationIcons="false" editDirectory="/RobotML.edit/src-gen"
+    editorDirectory="/RobotML.editor/src-gen" modelPluginID="RobotML" modelName="RobotML"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>robotML.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="RobotML" disposableProviderFactory="true" ecorePackage="robotML.ecore#/">
+    <genClasses ecoreClass="robotML.ecore#//RobotML">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//RobotML/fonction"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//RobotML/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Fonction">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Fonction/possess"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Fonction/parameters"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Fonction/typeReturned"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Fonction/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Action">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Action/action"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//ControlStructure">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//ControlStructure/Condition"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Order"/>
+    <genClasses ecoreClass="robotML.ecore#//Assignation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Assignation/expression"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Assignation/AssignedElement"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Set">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Set/order"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Set/parameter"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Get">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Get/order"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Mouvement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Mouvement/order"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Deplacement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Deplacement/cm"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Vitesse">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Vitesse/Distance"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Vitesse/cm"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Rotation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Rotation/Angle"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Rotation/degree"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Direction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Direction/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Direction/Angle"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Direction/deplacement"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Direction/degree"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Unit">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Unit/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Cm">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Cm/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Degree">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Degree/unit"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Sensor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Sensor/Value"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//Sensor/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//DistanceCaptor">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//DistanceCaptor/unite"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Type"/>
+    <genClasses ecoreClass="robotML.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute robotML.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//DataType"/>
+    <genClasses ecoreClass="robotML.ecore#//Boolean"/>
+    <genClasses ecoreClass="robotML.ecore#//String"/>
+    <genClasses ecoreClass="robotML.ecore#//Expression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Expression/right"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Expression/left"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Expression/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//ArithmeticExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//ArithmeticExpression/const"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//ArithmeticExpression/operand"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Operand">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Operand/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Addition"/>
+    <genClasses ecoreClass="robotML.ecore#//Soustraction"/>
+    <genClasses ecoreClass="robotML.ecore#//Multiplication"/>
+    <genClasses ecoreClass="robotML.ecore#//Négation"/>
+    <genClasses ecoreClass="robotML.ecore#//BooleanExpression">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//BooleanExpression/booleanOperand"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//BooleanExpression/namedelment"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Integer"/>
+    <genClasses ecoreClass="robotML.ecore#//Void"/>
+    <genClasses image="false" ecoreClass="robotML.ecore#//Operand.1">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//Operand.1/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Or"/>
+    <genClasses ecoreClass="robotML.ecore#//BooleanOperand">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference robotML.ecore#//BooleanOperand/expression"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//And"/>
+    <genClasses ecoreClass="robotML.ecore#//Loop">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Loop/actionInsideLoop"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Superior"/>
+    <genClasses ecoreClass="robotML.ecore#//Inferior"/>
+    <genClasses ecoreClass="robotML.ecore#//Equal"/>
+    <genClasses ecoreClass="robotML.ecore#//If">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//If/elseif"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//If/else"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//ElseIf">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//ElseIf/booleanexpression"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//ElseIf/elseif"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//ElseIf/action"/>
+    </genClasses>
+    <genClasses ecoreClass="robotML.ecore#//Else">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference robotML.ecore#//Else/action"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
